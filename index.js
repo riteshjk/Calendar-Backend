@@ -16,7 +16,9 @@ app.use(cookieParser());
 app.use("/auth",userRoute)
 app.use("/auth",eventRouter)
 
-
+app.get("/",(req,res)=>{
+    res.send("HOME PAGE")
+})
 
 app.listen(3000, async()=>{
     try{
