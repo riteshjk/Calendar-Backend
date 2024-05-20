@@ -74,7 +74,7 @@ const oAuth2Client = new OAuth2Client(
   
       const queryString = `?name=${encodeURIComponent(user.name)}&email=${encodeURIComponent(user.email)}&profilePic=${encodeURIComponent(user.profilePic)}&accessToken=${encodeURIComponent(tokens.access_token)}&refreshToken=${encodeURIComponent(tokens.refresh_token)}`;
     
-      res.redirect(`http://localhost:3001/home${queryString}`);
+      res.redirect(`https://calender-c76e56cer-productions-projects-27b3321f.vercel.app/home${queryString}`);
     
     } catch (err) {
       console.log(err.response ? err.response.data : err.message);
