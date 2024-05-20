@@ -11,7 +11,7 @@ const oAuth2Client = new OAuth2Client(
   );
   
   export const userLogin = async (req, res) => {
-    res.header("Access-Control-Allow-Origin", "http://localhost:3001");
+    res.header("Access-Control-Allow-Origin", "https://calender-c76e56cer-productions-projects-27b3321f.vercel.app");
     res.header("Referer-Policy", "no-referrer-when-downgrade");
   
     const SCOPES = [
